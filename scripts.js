@@ -4,7 +4,7 @@ function drawTree(n) {
   for (var i = 1; i <= n ; i++) {
     star = "";
     space = " ";
-    for (var k = n-1; k >= i; k--) {
+    for (var j = i; j < n; j++) {
       space += ' ';
     }
     for (var j = 1; j <= (2 * i) - 1; j++) {
