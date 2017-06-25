@@ -1,0 +1,52 @@
+* {
+	text-transform: uppercase;
+	font-family: 'Russo One';
+	letter-spacing: 2px;
+}
+body {
+	background: #BACBE2;
+}
+.container {
+	width: 900px;
+	max-width: 900px;
+	padding: 30px;
+}
+.label {
+	display: inline-block;
+	margin: 0 auto;
+	min-width: 150px;
+	font-size: 20px;
+	font-style: bold;
+	color: black;
+}
+.buttons {
+	margin: 20px auto;
+	width: 500px;
+	max-width: 500px;
+	display: flex;
+	float: left;
+}
+.newGame {
+	font-size: 24px;
+	text-transform: uppercase;
+}
+.newGame:hover {
+	background: gray;
+	color: white;
+	border: none;
+}
+.btn {
+	min-width: 200px;
+	background: #E5E5E5;
+	color: #424874;
+	font-size: 20px;
+	text-transform: uppercase;
+}
+.btn:hover {
+	background: #FF8989;
+	color: white;
+	border: 1px solid #FF8989;
+}
+[class*="fa-"] {
+	font-size: 24px;
+}
