@@ -113,11 +113,31 @@ function checkWinner(playerPick, computerPick) {
         computer.score++;
     } else {
         playerResultElem.innerHTML = "It's a tie!";
-		computerResultElem.innerHTML = "It's a tie!";		
+		computerResultElem.innerHTML = "It's a tie!";	
+	
     }
+	setGamePoints();
 }
 function setGamePoints() {
     playerPointsElem.innerHTML = player.score;
     computerPointsElem.innerHTML = computer.score;
 }
+
+function theEnd() {
+	if (player.score == 10) {
+	alert('You won! Well done!');
+	gameState = 'ended';
+	setGameView();
+	} 
+	else if (computer.score == 10) {
+	alert('Computer won! Try again');
+	gameState = 'ended';
+	setGameView();
+	} 
+	console.log('test');
+}
+theEnd();
+
+
+
 	
