@@ -59,7 +59,7 @@ var playerNameElem = document.getElementById('js-playerName');
 
 //PO WCISNIECIU PRZYCISKU URUCHAMIA SIE FUNKCJA, KTORA USTAWIA STAN POCZATKOWY GRY
 function newGame() {
-	player.name = prompt('Enter your name', 'imię gracza');
+	player.name = prompt('Enter your name');
 	if(player.name) {
 		player.score = computer.score = 0;
 		gameState = 'started';
@@ -117,6 +117,7 @@ function checkWinner(playerPick, computerPick) {
 	
     }
 	setGamePoints();
+	theEnd();
 }
 function setGamePoints() {
     playerPointsElem.innerHTML = player.score;
@@ -130,13 +131,13 @@ function theEnd() {
 	setGameView();
 	} 
 	else if (computer.score == 10) {
-	alert('Computer won! Try again');
+	alert('Computer won! Try again!');
 	gameState = 'ended';
 	setGameView();
 	} 
 	console.log('test');
 }
-theEnd();
+
 
 
 
